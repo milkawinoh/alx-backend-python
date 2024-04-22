@@ -14,8 +14,7 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
     """Execute multiple coroutines concurrently and collect results.
 
     This coroutine function creates `n` instances of
-      the `wait_random` coroutine
-    with a specified maximum delay (`max_delay`). 
+    the `wait_random` coroutine with a specified maximum delay
     It then uses `asyncio.as_completed`
     to await the completion of these coroutines and collects the results.
 
